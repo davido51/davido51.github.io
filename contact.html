@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><mon-blog-francojap></mon-blog-francojap></title>
+  <link rel="stylesheet" href="style.css">
+  <title>contact</title>
+</head>
+
+<body>
+  <header>
+    <div  class="photoblog"><img class="logoimage" src="image\logojapon.png" alt="logoimage"/></div>
+    <nav>
+      <ul>
+        <li><a href="presentation.html">ma presentation</a></li>
+        <li><a href="mes hobbis.html">mes-hobbis</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="pagecontact">
+    <div class="container">
+
+      <h2 class="titre2-contact">Me contacter</h2>
+      <form>
+        <div class="form-container">
+          <div class="group-form">
+            <div class="form-group">
+              <label>Votre prénom :</label>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <label>Votre nom : </label>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="form-container">
+          <div class="group-form">
+            <div class="form-group">
+              <label>Votre email :</label>
+              <input type="email" required />
+            </div>
+            <div class="form-group form-date">
+              <label>quelle est Votre date naissance :</label>
+              <input type="date" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-info">
+          <label>Quelle est la raison de votre contact ?</label>
+          <select name="reason" id="contact-reason">
+            <option value="">--Choisissez une option--</option>
+            <option value="informations">
+              Je souhaite plus d'informations sur vos prestations
+            </option>
+            <option value="bug">Reporter un bug sur le site web</option>
+            <option value="discute">J'aimerais discuter</option>
+          </select>
+        </div>
+        <div class="form-group form-description">
+          <label>Ecrivez votre message:</label>
+          <textarea id="message" name="message" placeholder="Tapez votre message ici" rows="5" cols="15" maxlength="500"
+            wrap></textarea>
+        </div>
+        <div class="form-group form-checkpoint form-newsletter">
+          <label>S'inscrire à la newsletter </label>
+          <input type="checkbox" value="newsletter" />
+          <div class="Envoyer"><button type="submit" class="formulaire">Envoyer le formulaire</button></div>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <a href="https://www.facebook.com/groups/francojaponais/"><img class="logofbook" src="image\logoxcf.png"></a>
+    <p>&copy 2024 Wild code school<br>made 💓by wilders image </p> 
+  </footer>
+</body>
+
+</html>
