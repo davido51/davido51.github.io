@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=M+PLUS+1+Code:wght@100..700&display=swap');
+
+@font-face {
+    font-family: "WinterSnow-Regular";
+    src: url('./font/WinterSnow-Regular.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+    body {
+        background-image: url("./image/salonjapon.jpg");
+        background-repeat: no-repeat;
+        font-family: "Calistoga", serif;
+        font-weight: 500;
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+       height: 100vh;
+    }
+    .logofbook {
+        width: 8rem;
+        height: 5rem;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    nav {
+        width: 70%;
+        height: 100px;
+        background-color: rgba(188, 143, 143, 0.672);
+        padding: 1rem;
+        margin-right: 1rem;
+        border-radius: 12px;
+    }
+    ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+body .logoimage {
+    width: 10rem;
+    height: 10rem;
+    align-self: center;
+    justify-self: center;
+}
+
+
+/*mon footer*/
+footer {
+    width: 80%;
+    border: 1px #3a3939 solid;
+    text-align: center;
+    align-self: center;
+    margin-top : auto;
+    background-color: #f3ecec;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*fin de footer*/
+.intro{
+    color: white;
+    gap:1rem;
+    background-color: rgb(188, 143, 143);
+    border-radius: 12px;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+} 
+
+
+
+ 
+
+
+
+

@@ -9,6 +9,7 @@ h1 {
     font-family: "WinterSnow-Regular", sans serif;
     text-align: center;
     color: aliceblue;
+   margin-top:5rem ;
 }
 
 * {
@@ -20,32 +21,75 @@ h1 {
 body {
     background-image: url("./image/salonjapon.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* rendre fix le background */
+    background-attachment: fixed;
     font-family: "Calistoga", serif;
     font-weight: 500;
     font-style: normal;
     display: flex;
     flex-direction: column;
-   height: 100vh;
+    height: 100vh;
+}
+.intro{
+    display:flex;
+    margin-top: 2rem;
+    width: 60%;
+    height: 85%;
+    flex-direction: column;
+    align-items:center ;
+    color: white;
+    gap:1rem;
+    background-color: rgba(188, 143, 143, 0.672);
+    border-radius: 12px;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    /* permettre de scroller dans ta div */
+    overflow: auto;
+}
+/* enlever la scrollbar pour google chrome*/
+.intro::-webkit-scrollbar{
+    display: none;
+
+}
+/* enlever la scrollbar pour google les autres navigateurs*/
+.intro {
+    -ms-overflow-style: none; 
+    overflow: -moz-scrollbars-none; 
+    
+
 }
 
 .logofbook {
     width: 8rem;
-    height: 5rem;
+    height: 7rem;
+}
+
+.logoduX{
+    width: 3rem;
+    height: 4rem;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+  
 }
 
 nav {
-    width: 70%;
+
+    width: 85%;
     height: 100px;
     background-color: rgba(188, 143, 143, 0.672);
     padding: 1rem;
     margin-right: 1rem;
     border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 ul {
@@ -59,6 +103,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 body .logoimage {
@@ -66,7 +111,7 @@ body .logoimage {
     height: 8rem;
     align-self: center;
     justify-self: center;
-
+    border-radius: 15px;
 }
 
 /*mon footer*/
@@ -89,7 +134,7 @@ footer {
 /*fin de footer*/
 
 input[type="checkbox"] {
-    width: 5rem;
+    width: 2rem;
     margin: 0;
 }
 
@@ -157,7 +202,7 @@ button {
 }
 
 .form-group {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,11 +213,11 @@ button {
 .imgportraitcontact {
     width: 25rem;
     margin-right: 25rem;
-    margin-top: 2rem
+    margin-top: 25rem
 }
 
 label {
-    margin: 2rem;
+    margin:1rem;
     color: #ffffff;
 
 }
@@ -196,8 +241,9 @@ label {
 }
 .container{
     background-color: rgba(188, 143, 143, 0.672);
-    width: 50%;
+    width:33%; 
     border-radius: 15px;
+
 }
 
 .form-newsletter {
@@ -206,33 +252,37 @@ label {
     justify-content: center;
 }
 .photoblog{
-    width: 10%;
+    width:5%;
     height: 100px;
-    background-color: rgba(244, 236, 236, 0.508);
+    background-color: rgba(188, 143, 143, 0.672);
     margin-right: 1rem;
     border-radius: 12px; 
     display: flex;
     flex-direction: row;
-
-}
-.intro{
-    display:flex;
-    margin-top: 5rem;
-    width: 50%;
-    height: 90%;
-    flex-direction: column;
-    align-items:center ;
-    color: white;
-    gap:1rem;
-    background-color: rgba(188, 143, 143, 0.672);
-    border-radius: 12px;
-    padding-top: 1rem;
-    padding-left: 1rem;
 }
 
-main{
+
+ main{
     display: flex;
     justify-content: center;
+    height: 100%;
 }
  
+.compteur{
+    display: flex;
+    justify-content: center;
+    margin: 25px ;
+    text-align: center;
+
+}
+.compteur img{
+    width:300px;
+   
+}
+.animespref{
+    display: grid;
+  grid-template-rows: minmax(100px, auto);
+  grid-template-columns: repeat(3, 1fr);
+}
+   
 
