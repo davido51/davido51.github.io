@@ -8,37 +8,43 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
-    body {
-        background-image: url("./image/salonjapon.jpg");
-        background-repeat: no-repeat;
-        font-family: "Calistoga", serif;
-        font-weight: 500;
-        font-style: normal;
-        display: flex;
-        flex-direction: column;
-       height: 100vh;
-    }
-    .logofbook {
-        width: 8rem;
-        height: 5rem;
-    }
-    
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    nav {
-        width: 70%;
-        height: 100px;
-        background-color: rgba(188, 143, 143, 0.672);
-        padding: 1rem;
-        margin-right: 1rem;
-        border-radius: 12px;
-    }
-    ul {
+body {
+    background-image: url("./image/salonjapon.jpg");
+    background-repeat: no-repeat;
+    font-family: "Calistoga", serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logofbook {
+    width: 8rem;
+    height: 5rem;
+   
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav {
+    width: 70%;
+    height: 100px;
+    background-color: rgba(188, 143, 143, 0.672);
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 12px;
+
+}
+
+ul {
     display: flex;
     gap: 2rem;
     list-style: none;
@@ -46,11 +52,13 @@
     justify-content: center;
     margin-top: 1rem;
 }
+
 body .logoimage {
     width: 10rem;
     height: 10rem;
     align-self: center;
     justify-self: center;
+
 }
 
 
@@ -60,7 +68,7 @@ footer {
     border: 1px #3a3939 solid;
     text-align: center;
     align-self: center;
-    margin-top : auto;
+    margin-top: auto;
     background-color: #f3ecec;
     text-decoration: none;
     padding: 0.5rem;
@@ -72,9 +80,9 @@ footer {
 }
 
 /*fin de footer*/
-.intro{
+.intro {
     color: white;
-    gap:1rem;
+    gap: 1rem;
     background-color: rgb(188, 143, 143);
     border-radius: 12px;
     padding-top: 1rem;
@@ -83,16 +91,14 @@ footer {
     flex-direction: row;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     border-radius: 12px;
-} 
+}
 
-
-
- 
-
-
-
-
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
