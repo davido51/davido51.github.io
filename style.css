@@ -352,6 +352,10 @@ swiper-slide img {
     font-size: 1.25rem;
 }
 
+.intro .paragraph-index {
+    padding: 1rem;
+}
+
 @media only screen and (max-width: 720px) {
     .nav-ordi {
         display: none;
