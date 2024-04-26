@@ -5,63 +5,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><mon-blog-francojap></mon-blog-francojap></title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>mes hobbies</title>
 </head>
 
 <body>
   <header>
-    <nav>
+    <nav class="nav-ordi">
       <ul>
-        <li><a href="presentation.html"><img src="image\image.png"></a></li>
-        <li><a href="mes hobbis.html"><img src="image\nav3.png"></a></li>
-        <li><a href="contact.html"><img src="image\nav2.png"></a></li>
-        <div class="photoblog"><img class="logoimage" src="image\mon blog.png" alt="logoimage" /></div>
-      </ul>
-    </nav>
+        <li><a href="presentation.html"><img src="image\image.png" ></a></li>
+        <li><a href="mes hobbis.html"><img src="image\nav3.png" ></a></li>
+        <li><a href="contact.html"><img src="image\nav2.png" ></a></li>
+    <div class="photoblog"><img class="logoimage" src="image\mon blog.png" alt="logoimage" /></div>
+    </ul>  
+  </nav>
+  <nav class="nav-portable">
+    <ul>
+      <li><a href="presentation.html"> presentation </a></li>
+      <li><a href="mes hobbis.html">mes hobbies</a></li>
+      <li><a href="contact.html">contactez</a></li>
+      
+  <div class="photoblog"><img class="logoimage" src="image\mon blog.png" alt="logoimage" /></div>
+  </ul>  
+</nav>
   </header>
-  <div class="container"><img class="title-image" src="image\-bienvenue-sur-ma-page-de-mes-19-04-2024.gif" alt="title">
+  <div class="container-title">
+    <img class="title-image" src="image\-bienvenue-sur-ma-page-de-mes-19-04-2024.gif" alt="title">
   </div>
   <main>
     <div class="intro">
       <h1> Mes hobbies</h1>
       <h2>Mes mangas preferés</h2>
-      <div>
-        <div class="slider-container">
-          <div class="menu">
-            <label for="slide-dot-1"></label>
-            <label for="slide-dot-2"></label>
-            <label for="slide-dot-3"></label>
-            <label for="slide-dot-4"></label>
-            <label for="slide-dot-5"></label>
-            <label for="slide-dot-6"></label>
-            <label for="slide-dot-7"></label>
-            
-          </div>
-
-          <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
-          <img class="slide-img" src="imgmanege\imag1.png">
-
-          <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
-          <img class="slide-img" src="imgmanege\imag2.png">
-
-          <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
-          <img class="slide-img" src="imgmanege\imag3.png">
-
-          <input class="slide-input" id="slide-dot-4" type="radio" name="slides">
-          <img class="slide-img" src="imgmanege\imag4.png">
-
-          <input class="slide-input" id="slide-dot-5" type="radio" name="slides">
-          <img class="slide-img" src="imgmanege\imag5.png">
-
-          <input class="slide-input" id="slide-dot-6" type="radio" name="slides">
-          <img class="slide-img" src="imgmanege\imag6.png">
-
-          <input class="slide-input" id="slide-dot-7" type="radio" name="slides">
-          <img class="slide-img" src="imgmanege\imag7.png">
-        </div>
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="false" space-between="30"
+        centered-slides="true" autoplay-delay="3500" autoplay-disable-on-interaction="false">
+          <swiper-slide><img src="imgmanege\imag1.png" />
+          </swiper-slide>
+          <swiper-slide> <img src="imgmanege\imag2.png"></swiper-slide>
+          <swiper-slide>  <img  src="imgmanege\imag3.png"></swiper-slide>
+          <swiper-slide> <img src="imgmanege\imag4.png"></swiper-slide>
+          <swiper-slide><img  src="imgmanege\imag5.png"></swiper-slide>
+          <swiper-slide><img  src="imgmanege\imag6.png"></swiper-slide>
+          <swiper-slide> <img  src="imgmanege\imag7.png"></swiper-slide>
+      </swiper-container>
 
         <h1>mes animes preferes</h1>
         <div class="animespref">
@@ -73,19 +58,19 @@
           <img src="les animes mangas\mirai.png" alt="anime">
         </div>
         <div class="actualite-film">
-        <h2>Ma creation video sur youtube</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vzwm7eMRoa0?si=jTejZGUXWOESR53B"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h2>Ma creation video sur youtube</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/vzwm7eMRoa0?si=jTejZGUXWOESR53B"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="actualite-film">
-        <h1>Mon film en ce moment </h1>
+        <h2>Mon film en ce moment </h2>
         <img src="film pref\shogun.png" alt="film">
 
-        <h2> A l'époque Heian (734-1185), le shogun désignait un général chargé de diriger la conquête et la
+        <p> A l'époque Heian (734-1185), le shogun désignait un général chargé de diriger la conquête et la
           pacification de la région du Tohoku face aux autochtones Emishi. En ces temps, on utilisait l'appellation «
-          Seii taishôgun », traduit par « grand général pacificateur des barbares ». </h2>
+          Seii taishôgun », traduit par « grand général pacificateur des barbares ». </p>
       </div>
     </div>
     </div>
@@ -98,9 +83,8 @@
   </div>
     <p>&copy 2024 Wild code school<br>made 💓by wilders image </p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 </body>
 
 </html>
