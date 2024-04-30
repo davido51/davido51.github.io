@@ -498,3 +498,8 @@ swiper-slide img {
         margin: 1rem 0.5rem;
     }
 }
+div.dragonballz{
+    display: flex;
+    align-items:self-end;
+
+}
