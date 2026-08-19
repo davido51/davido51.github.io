@@ -1,106 +1,138 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Davdevp51 | Portfolio</title>
-    <style>
-        body { 
-            background-color: #121212; 
-            color: #00ff41; 
-            font-family: 'Courier New', Courier, monospace; 
-            padding: 40px; 
-            max-width: 700px; 
-            margin: auto; 
-        }
-        h1 { border-bottom: 2px solid #00ff41; padding-bottom: 10px; }
-        .bloc { 
-            background-color: #1e1e1e; 
-            padding: 20px; 
-            margin-bottom: 15px; 
-            border-left: 5px solid #00ff41; 
-            border-radius: 5px; 
-        }
-        a { color: #ffffff; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
-      .mon-logo {
-    width: 150px;       /* Ajustez la taille selon vos besoins */
-    height: auto;       /* Conserve les proportions d'origine */
-    border-radius: 50%; /* Optionnel : rend l'image parfaitement ronde (idéal pour un avatar/logo) */
-    object-fit: cover;  /* Évite que l'image ne soit déformée */
-}
-            
-    </style>
-</head>
-<body>
-<img src=""alt="class="mon-logo">
-    <h1> Davdevp51_Portfolio</h1>
-    <p>Bienvenue dans mon interface. Voici mes projets et mes réseaux :</p>
+<html lang="en">
 
-    <div class="bloc">
-        <h3>1. Mon site en ligne</h3>
-        <a href="https://davido51.github.io/index.html">>> Accéder au projet</a>
-    </div>
-
-    <div class="bloc">
-        <h3>2. Communauté WhatsApp (Devesschool)</h3>
-        <p>Blagues de dev et vrai code.</p>
-        <a href="https://discord.gg/b2KqUWWuf5">>> Rejoindre le groupe</a>
-    </div>
-
-    <div class="bloc">
-        <h3>3. Serveur Discord</h3>
-        <a href="https://discord.gg/NQupdwbyg">>> Rejoindre Discord</a>
-    </div>
-
-    <div class="bloc">
-        <h3>4. Groupe Facebook</h3>
-        <a href="https://www.facebook.com/profile.php?id=61563568614588">>> Voir le groupe</a>
-    </div>
-
-</body>
-</html>
-ma presentation
-<!DOCTYPE html>
-<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de David - Geek & Créateur</title>
-    <style>
-        body {
-            background-color: #121212;
-            color: #00ffcc;
-            font-family: 'Courier New', Courier, monospace;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #ff007f;
-            text-shadow: 0 0 10px #ff007f;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #00ffcc;
-            color: #121212;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            box-align: center;
-        }
-        .btn:hover {
-            background-color: #ff007f;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>David Viard - Développeur Web</title>
 </head>
+
 <body>
-    <h1>Bienvenue sur mon Portfolio !</h1>
-    <p>> Chargement du profil de David... [OK]</p>
-    <p>> Passionné de tech, de films et de mangas.</p>
-    
-    <!-- Remplace TON_LIEN_ICI par ton vrai lien WhatsApp -->
-    <a class="btn" href="TON_LIEN_ICI" target="_blank">Rejoindre mon groupe WhatsApp</a>
-</body>
+    <div class="grid-background"></div>
+    <button id="music-toggle">🔊</button>
+    <ul class="nav-links">
+        <header>
+
+            <audio id="bg-music" loop>
+                <source src="musique/1-11 Fanfare.mid.mp3" type="audio/mpeg">
+            </audio>
+
+            <nav>
+
+                <div class="avatar-container">
+                    <div class="avatar-wrapper">
+                        <!-- Avatar principal -->
+                        <div class="avatar-circle">
+                            <div class="avatar-inner">
+                                <div class="avatar-image">
+                                    <!-- REMPLACEZ "votre-photo.jpg" par le chemin vers votre photo -->
+                                    <img src="image/moi dv.jpg" alt="David Viard"
+                                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <!-- Fallback si l'image ne charge pas -->
+
+                                </div>
+                                <div class="scan-line"></div>
+                                <div class="hologram-effect"></div>
+                            </div>
+                        </div>
+
+                        <!-- Particules orbitales -->
+                        <div class="orbital-particle particle-1"></div>
+                        <div class="orbital-particle particle-2"></div>
+                        <div class="orbital-particle particle-3"></div>
+                        <div class="orbital-particle particle-4"></div>
+
+                        <!-- Décorations hexagonales -->
+                        <div class="hex-decoration hex-1"></div>
+                        <div class="hex-decoration hex-2"></div>
+                        <div class="hex-decoration hex-3"></div>
+                        <div class="hex-decoration hex-4"></div>
+
+                        <!-- Indicateur de statut -->
+                        <div class="status-indicator"></div>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#accueil">ACCUEIL</a></li>
+                    <li><a href="apropomoi.html">À PROPOS</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            
+            <h1 class="header-title">🎮 Bienvenue sur mon portfolio 🎮</h1>
+            <div class="marquee">👾 Insert Coin... Chargement des projets... 🚀</div>
+            <section class="hero-section fade-in">
+                <h1 class="hero-title">
+                    NIVEAU 1 DÉBLOQUÉ:<br>
+                    <span style="color: #66d9ff;">DAVID VIARD <br>(davdevp51)</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Développeur web spécialisé en PHP, HTML, CSS,javascript <br>
+                    Prêt à relever de nouveaux défis pour un challenge hors-norme
+                </p>
+                <a href="/metsprojets.html" class="cta-button">COMMENCER LA PARTIE</a>
+            </section>
+
+            <div class="perspective-grid"></div>
+
+            <section class="portfolio-section">
+                <h2 class="section-title">MES QUÊTES TERMINÉES (PORTFOLIO)</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card fade-in">
+                        <div class="card-icon">🚀</div>
+                        <h3 class="card-title">Projet 1</h3>
+                        <p class="card-description">Application web moderne développée avec les dernières technologies
+                        </p>
+                    </div>
+                    <div class="portfolio-card fade-in">
+                        <div class="card-icon">⚡</div>
+                        <h3 class="card-title">Projet 2</h3>
+                        <p class="card-description">Interface utilisateur innovante avec animations avancées</p>
+                    </div>
+                    <div class="portfolio-card fade-in">
+                        <div class="card-icon">🎮</div>
+                        <h3 class="card-title">Projet 3</h3>
+                        <p class="card-description">Jeu interactif développé en JavaScript pur</p>
+                    </div>
+                    <div class="portfolio-card fade-in">
+                        <div class="card-icon">🔧</div>
+                        <h3 class="card-title">Projet 4</h3>
+                        <p class="card-description">Outil de productivité pour développeurs</p>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <div class="skills-card">
+                        <h3 class="skills-title">FICHE DE PERSONNAGE (STATS & COMPÉTENCES)</h3>
+                        <p style="color: #66d9ff;">
+                            • HTML/CSS - Niveau Déutant<br>
+                            • JavaScript/React - Apprentissage<br>
+                            • PHP - Niveau Débutant<br>
+                            • Base de données - Niveau Débutant<br>
+
+                        </p>
+                    </div>
+                    <div class="download-section">
+                        <a href="documents/David-Viard.pdf" class="download-button" download="Mon_CV.pdf">
+                            TÉLÉCHARGER LE GUIDE DU JOUEUR 📄
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <script src="js/main.js"></script>
+        <script src="js/animations.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/contact.js"></script>
+        <script src="js/navigation.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/musique.js"></script>
+        
+
 </html>
